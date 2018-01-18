@@ -4,7 +4,8 @@
   "description": "Backend for the Movie App of the course 'Webapplikationen mit React'",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/gaquinozh/movie-app-api/issues"
   },
-  "homepage": "https://github.com/gaquinozh/movie-app-api#readme"
+  "homepage": "https://github.com/gaquinozh/movie-app-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.0"
+  }
 }
