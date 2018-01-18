@@ -1,0 +1,24 @@
+{
+  "name": "movie-app-api",
+  "version": "0.0.1",
+  "description": "Backend for the Movie App of the course 'Webapplikationen mit React'",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gaquinozh/movie-app-api.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "Mongoose",
+    "Express"
+  ],
+  "author": "Giuseppe Aquino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaquinozh/movie-app-api/issues"
+  },
+  "homepage": "https://github.com/gaquinozh/movie-app-api#readme"
+}
