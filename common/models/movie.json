@@ -1,0 +1,77 @@
+{
+  "name": "movie",
+  "plural": "movies",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "scope": {
+    "include": [
+      "reviews"
+    ]
+  },
+  "properties": {
+    "adult": {
+      "type": "boolean",
+      "default": false
+    },
+    "backdrop_path": {
+      "type": "string"
+    },
+    "budget": {
+      "type": "number"
+    },
+    "homepage": {
+      "type": "string"
+    },
+    "original_language": {
+      "type": "string",
+      "required": true
+    },
+    "original_title": {
+      "type": "string",
+      "required": true
+    },
+    "overview": {
+      "type": "string",
+      "required": true
+    },
+    "poster_path": {
+      "type": "string"
+    },
+    "release_date": {
+      "type": "date",
+      "required": true
+    },
+    "runtime": {
+      "type": "number",
+      "required": true
+    },
+    "status": {
+      "type": "string"
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "genres": {
+      "type": [
+        "object"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "reviews": {
+      "type": "hasMany",
+      "model": "review",
+      "foreignKey": "movieId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
